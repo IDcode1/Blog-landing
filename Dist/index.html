@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Landing Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="font-body">
+      <!-- header  -->
+    <div class="bg-white shadow-md fixed top-0 w-full">
+      <header
+        class="container mx-auto flex flex-wrap items-center justify-between py-2 px-6"
+      >
+        <div class="flex items-center cursor-pointer transition">
+          <img
+            src="./img/png-transparent-logo-fashion-design.png"
+            alt=""
+            class="w-16"
+          />
+          <span
+            class="text-xl font-semibold font-title bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 hover:text-sec"
+          >
+            NewsLetter
+          </span>
+        </div>
+        <div class="sm:hidden block">
+          <button
+            id="menu-open"
+            class="bg-sec rounded text-white px-3 py-1 hover:bg-purple-900 transition"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <button
+            id="menu-close"
+            class="hidden bg-sec rounded text-white px-3 py-1 hover:bg-purple-900 transition"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          id="menu-items"
+          class="font-title text-center w-full hidden sm:w-auto sm:flex sm:items-center"
+        >
+          <ul class="">
+            <li class="mb-3 sm:mb-0 block sm:inline-block items-center mr-4">
+              <a href="#" class="text-pry hover:text-sec visited:text-sec">Home</a>
+            </li>
+            <li class="mb-3 sm:mb-0 block sm:inline-block items-center mr-4">
+              <a href="#about" class="text-pry hover:text-sec">About</a>
+            </li>
+            <li class="mb-3 sm:mb-0 block sm:inline-block items-center mr-4">
+              <a href="#call" class="text-pry hover:text-sec">Contact</a>
+            </li>
+            <li class="mb-3 sm:mb-0 block sm:inline-block items-center mr-4">
+              <a href="#" class="text-pry hover:text-sec">Product & Shop</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container px-4 mx-auto max-w-5xl pt-20">
+      <!-- title  -->
+      <div class="text-center py-10 sm:py-14">
+        <h1 class="text-3xl md:text-5xl font-bold font-title text-sec">
+          Latest Blog <br />
+          <span class="text-pry"> Posts </span>
+        </h1>
+        <p id="about" class="capitalize text-pry max-w-xs mx-auto py-8">
+          welcome to our blog site. get our latest news with just one search!
+        </p>
+        <input
+          type="search"
+          name=""
+          id=""
+          placeholder="search..."
+          class="bg-our-bg py-2 px-8 rounded-3xl shadow-inner focus:outline-none focus:ring-1 ring-sec"
+        />
+      </div>
+      <!-- main  -->
+      <section class="main">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-8 lg:gap-y-16 lg:gap-x-10"
+        >
+          <!-- first row -->
+          <div class="col-span-1 md:col-span-2 lg:col-span-3">
+            <a
+              href="#"
+              class="border-2 border-gray-100 block sm:flex rounded-3xl overflow-hidden hover:shadow-lg duration-300"
+            >
+              <div class="sm:w-1/2">
+                <img src="./img/office2.jpeg" alt="" class="h-full" />
+              </div>
+              <div class="sm:w-1/2 p-4 md:p-7">
+                <p
+                  class="inline px-3 py-1 text-sec bg-our-bg rounded-sm text-xs"
+                >
+                  FEATURED
+                </p>
+                <h2 class="post-title">
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen lg:text-md pb-5">
+                  A brand style guide is also known as a brand guide as a brand
+                  guide or brand book. For them, such a well-thought-of guide
+                  becomes their key document, which serve as a guide to create a
+                  variety of content for brand marketing.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="./img/Gunpowder-poster  (2).jpg"
+                    alt=""
+                    class="h-10 w-10 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pry font-bold pb-1">John Doe</h6>
+                    <p class="text-gen text-xs">Brand specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- first row -->
+          <!-- second row -->
+          <div class="blog-card">
+            <a href="#">
+              <img src="./img/img_mouseover3.jpg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-sm lg:text-md text-gen pb-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus rerum ad magnam, provident explicabo reprehenderit
+                  consequatur necessitatibus cum nemo velit eius, impedit,
+                  voluptatem sapiente deserunt.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="./img/Gunpowder-poster  (1).jpg"
+                    alt=""
+                    class="h-10 w-10 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pry font-bold pb-1">John Doe</h6>
+                    <p class="text-gen text-xs">Brand specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="#">
+              <img src="./img/layers.jpg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-sm lg:text-md text-gen pb-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus rerum ad magnam, provident explicabo reprehenderit
+                  consequatur necessitatibus cum nemo velit eius, impedit,
+                  voluptatem sapiente deserunt.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="./img/Gunpowder-poster  (2).jpg"
+                    alt=""
+                    class="h-10 w-10 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pry font-bold pb-1">John Doe</h6>
+                    <p class="text-gen text-xs">Brand specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="#">
+              <img src="./img/swimming-pool1000x667-01-1.jpg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-sm lg:text-md text-gen pb-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus rerum ad magnam, provident explicabo reprehenderit
+                  consequatur necessitatibus cum nemo velit eius, impedit,
+                  voluptatem sapiente deserunt.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="./img/Poster.jpg"
+                    alt=""
+                    class="h-10 w-10 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pry font-bold pb-1">John Doe</h6>
+                    <p class="text-gen text-xs">Brand specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- second row -->
+          <!-- third row -->
+          <div class="blog-card col-span-1 lg:col-span-2">
+            <a href="#">
+              <img
+                src="./img/battlefield_2_special_forces.jpg"
+                alt=""
+                class="lg:h-72 w-full"
+              />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-sm lg:text-md text-gen pb-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus rerum ad magnam, provident explicabo reprehenderit
+                  consequatur necessitatibus cum nemo velit eius, impedit,
+                  voluptatem sapiente deserunt.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="./img/Poster.jpg"
+                    alt=""
+                    class="h-10 w-10 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pry font-bold pb-1">John Doe</h6>
+                    <p class="text-gen text-xs">Brand specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="#">
+              <img src="./img/office2.jpeg" alt="" />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-sm lg:text-md text-gen pb-5">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus rerum ad magnam, provident explicabo reprehenderit
+                  consequatur necessitatibus cum nemo velit eius, impedit,
+                  voluptatem sapiente deserunt.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="./img/Poster.jpg"
+                    alt=""
+                    class="h-10 w-10 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xs text-pry font-bold pb-1">John Doe</h6>
+                    <p class="text-gen text-xs">Brand specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- third row -->
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="call" class="subscribe">
+        <div class="text-center mx-auto py-12 sm:py-20 lg:py-30 mt-10">
+          <h6 class="text-3xl font-bold font-title text-pry">
+            Subscribe to Our<br />
+            <span class="text-sec"> Blog </span>
+          </h6>
+          <p class="max-w-xs text-pry mx-auto py-6">
+            please subscribe to get regular update and featured news through
+            your email
+          </p>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Email address"
+            required
+            class="bg-our-bg px-8 py-2 rounded-3xl shadow-inner focus:outline-none"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            class="mt-4 sm:mt-0 sm:-ml-10 bg-sec px-10 py-2 text-white rounded-3xl hover:bg-blue-800 focus:outline-line focus:ring-2"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- footer  -->
+    <footer class="bg-pry">
+      <div
+        class="sm:flex text-center px-12 justify-between py-6 text-white font-bold font-extrabold font-title max-w-5xl mx-auto tracking-wider"
+      >
+        <p>TailwindCSS</p>
+        <p>All right reserve &copy; 2022</p>
+      </div>
+    </footer>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
